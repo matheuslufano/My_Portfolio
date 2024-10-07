@@ -4,7 +4,6 @@ import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 
 import  StyledButton  from "../../../components/StyledButton/StyledButton";
-
 const Hero = () => {
 
   const StyledHero = styled("div") (({theme}) => ({ 
@@ -12,6 +11,12 @@ const Hero = () => {
     height: "100vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up("xs")]: { //<= mobile
+      paddingTop: "100px",
+    },
+    [theme.breakpoints.up("md")]: { //>= tasktop
+      paddingTop: "0",
+    },
   }))
 
   const StyledImg = styled("img") (({theme}) => ({ 
