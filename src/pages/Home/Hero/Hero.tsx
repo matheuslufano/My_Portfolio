@@ -44,7 +44,7 @@ const Hero = () => {
               <Grid container display="flex" justifyContent="center" spacing={2} pt={3}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
 
-                  <StyledButton>
+                  <StyledButton onClick={() => alert("Download CV")}>
                     <DownloadIcon />
                       <Typography>
                         Download CV
@@ -53,7 +53,7 @@ const Hero = () => {
 
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
+                  <StyledButton onClick={() => alert("Contact me")}>
                     <EmailIcon />
                     <Typography>
                       Contact me now
